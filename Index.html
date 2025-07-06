@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony Knox Photography - Professional Photographer Liverpool</title>
+    <meta name="description" content="Professional photographer Tony Knox specializing in wrestling photography, portraits, and creative projects. Serving Liverpool and North West England with 25+ years experience.">
+    <meta name="keywords" content="Tony Knox Photography, Liverpool photographer, wrestling photography, portraits, North West England, professional photographer">
+    <meta name="author" content="Tony Knox">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tonyknox.org.uk/">
+    <meta property="og:title" content="Tony Knox Photography - Professional Photographer Liverpool">
+    <meta property="og:description" content="Professional photographer specializing in wrestling photography, portraits, and creative projects across Liverpool and the North West with 25+ years experience.">
+    <meta property="og:image" content="https://tonyknox.org.uk/images/tony-knox-photography-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tonyknox.org.uk/">
+    <meta property="twitter:title" content="Tony Knox Photography - Professional Photographer Liverpool">
+    <meta property="twitter:description" content="Professional photographer specializing in wrestling photography, portraits, and creative projects across Liverpool and the North West with 25+ years experience.">
+    <meta property="twitter:image" content="https://tonyknox.org.uk/images/tony-knox-photography-og.jpg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">TONY KNOX</a>
+            <ul class="nav-links">
+                <li><a onclick="scrollToSection('home')">Home</a></li>
+                <li><a onclick="scrollToSection('portfolio')">Portfolio</a></li>
+                <li><a onclick="scrollToSection('about')">About</a></li>
+                <li><a onclick="scrollToSection('booking')">Booking</a></li>
+                <li><a onclick="scrollToSection('testimonials')">Reviews</a></li>
+                <li><a onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>TONY KNOX</h1>
+                <p class="hero-subtitle">Professional Photography</p>
+                <p class="hero-description">Capturing the extraordinary in wrestling, portraits, and life's most dynamic moments across Liverpool and the North West</p>
+                <a href="#portfolio" class="btn" onclick="scrollToSection('portfolio')">View Portfolio</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/wrestling-1.jpg" alt="Professional Wrestling Photography by Tony Knox" style="width: 100%; height: 100vh; object-fit: cover; object-position: center;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section light">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p class="portfolio-intro">From the intensity of professional wrestling to intimate portraits and creative projects, my work spans the full spectrum of human experience and emotion.</p>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" onclick="filterGallery('all')">All Work</button>
+                <button class="filter-btn" onclick="filterGallery('wrestling')">Wrestling</button>
+                <button class="filter-btn" onclick="filterGallery('portraits')">Portraits</button>
+                <button class="filter-btn" onclick="filterGallery('events')">Events</button>
+                <button class="filter-btn" onclick="filterGallery('artistic')">Artistic Projects</button>
+            </div>
+            
+            <div class="gallery-grid" id="gallery">
+                <!-- Wrestling Photography -->
+                <div class="gallery-item" data-category="wrestling">
+                    <img src="images/wrestling-1.jpg" alt="Professional Wrestling Photography">
+                    <div class="gallery-overlay">
+                        <h3>Wrestling Photography</h3>
+                        <p>Professional dramatic lighting and composition</p>
+                    </div>
+                </div>
+                
+                <!-- Portrait Photography -->
+                <div class="gallery-item" data-category="portraits">
+                    <img src="images/portrait-studio-1.jpg" alt="Studio Portrait Session">
+                    <div class="gallery-overlay">
+                        <h3>Studio Portraits</h3>
+                        <p>Professional lighting and composition</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="portraits">
+                    <img src="images/portrait-studio-2.jpg" alt="Contemporary Portrait">
+                    <div class="gallery-overlay">
+                        <h3>Contemporary Portraits</h3>
+                        <p>Modern style and professional lighting</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="portraits">
+                    <img src="images/portrait-studio-3.jpg" alt="Fashion Portrait">
+                    <div class="gallery-overlay">
+                        <h3>Fashion Portraits</h3>
+                        <p>Style and artistic vision</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="portraits">
+                    <img src="images/portrait-studio-4.jpg" alt="Creative Portrait">
+                    <div class="gallery-overlay">
+                        <h3>Creative Portraits</h3>
+                        <p>Artistic vision and professional composition</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="portraits">
+                    <img src="images/portrait-environmental-1.jpg" alt="Environmental Portrait">
+                    <div class="gallery-overlay">
+                        <h3>Environmental Portraits</h3>
+                        <p>Natural settings and authentic moments</p>
+                    </div>
+                </div>
+                
+                <!-- Professional Headshots -->
+                <div class="gallery-item" data-category="portraits">
+                    <img src="images/web RAMSEY CAMPBELL.jpg" alt="Ramsey Campbell - Renowned Horror Writer">
+                    <div class="gallery-overlay">
+                        <h3>Literary Portraits</h3>
+                        <p>Ramsey Campbell - Britain's most respected living horror writer</p>
+                    </div>
+                </div>
+                
+                <!-- Event Photography -->
+                <div class="gallery-item" data-category="events">
+                    <img src="images/event-community-1.jpg" alt="Community Event Photography">
+                    <div class="gallery-overlay">
+                        <h3>Community Events</h3>
+                        <p>Capturing local stories and moments</p>
+                    </div>
+                </div>
+                
+                <!-- Artistic Projects -->
+                <div class="gallery-item" data-category="artistic">
+                    <img src="images/Mothman 2.png" alt="MOTH Artistic Project">
+                    <div class="gallery-overlay">
+                        <h3>MOTH Project</h3>
+                        <p>Ongoing artistic exploration - featured in local news</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="artistic">
+                    <img src="images/Mothman Mag.jpg" alt="MOTH Magazine Feature">
+                    <div class="gallery-overlay">
+                        <h3>MOTH Magazine</h3>
+                        <p>Creative publication and artistic work</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Work Section -->
+            <div class="featured-work">
+                <div class="featured-image">
+                    <img src="images/wrestling-1.jpg" alt="Featured Wrestling Photography">
+                </div>
+                <div class="featured-content">
+                    <h3>Wrestling Photography Excellence</h3>
+                    <p>Specializing in professional wrestling photography with dramatic lighting and perfect timing. My work captures the raw emotion and athleticism of wrestling, from WWE events to independent promotions across the UK.</p>
+                    <p>Each shot tells a story of dedication, passion, and the artistry of professional wrestling.</p>
+                    <a href="https://www.flickr.com/photos/tonyknox/" target="_blank" class="btn">View Full Gallery on Flickr</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Distinguished Clients Section -->
+    <section class="section dark">
+        <div class="container">
+            <h2>Distinguished Clients</h2>
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <p style="font-size: 1.3rem; line-height: 1.8; margin-bottom: 3rem;">Over 25 years, I've had the privilege of photographing some truly remarkable individuals, from internationally acclaimed authors to professional athletes.</p>
+                
+                <div style="background: rgba(201, 169, 110, 0.1); padding: 40px; border-radius: 15px; margin-bottom: 3rem;">
+                    <h3 style="color: #c9a96e; margin-bottom: 20px; font-size: 2rem;">Literary Portraits</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 30px; align-items: center;">
+                        <img src="images/web RAMSEY CAMPBELL.jpg" alt="Ramsey Campbell Portrait" style="width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                        <div style="text-align: left;">
+                            <h4 style="color: #c9a96e; margin-bottom: 15px; font-size: 1.5rem;">Ramsey Campbell</h4>
+                            <p style="margin-bottom: 15px; line-height: 1.6;"><strong>Britain's most respected living horror writer</strong> - Author of over 30 novels and hundreds of short stories spanning 50+ years. Critics have called him "the leading horror writer of our generation, every bit the equal of Lovecraft or Blackwood."</p>
+                            <p style="font-style: italic; color: #c9a96e;">"Often called the UK's Stephen King" - Literary Critics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="font-size: 1.2rem; line-height: 1.8;">Working with distinguished clients requires not just technical expertise, but the ability to capture the essence of remarkable individuals who have shaped their fields. Each portrait session is tailored to reflect the unique personality and achievements of the subject.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section light">
+        <div class="container">
+            <h2>About Tony Knox</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/tonyknox2.jpg" alt="Tony Knox - Professional Photographer at Work">
+                </div>
+                <div class="about-text">
+                    <h3>Professional Photographer - Liverpool & North West</h3>
+                    <p>With over 25 years of experience, I've built a reputation for capturing the extraordinary in every moment. From the high-energy world of professional wrestling to intimate portrait sessions, my work spans the full spectrum of human experience.</p>
+                    
+                    <p>Based in Liverpool, I serve the entire North West region, bringing professional-grade equipment and artistic vision to every shoot. My wrestling photography has gained recognition throughout the UK, while my portrait work includes prestigious literary figures such as <strong>Ramsey Campbell</strong> - Britain's most respected living horror writer and author of over 30 novels.</p>
+                    
+                    <p>My client portfolio includes internationally renowned authors, professional wrestlers, community leaders, and creative professionals who trust me to capture their authentic essence and professional image.</p>
+                    
+                    <div class="specialties">
+                        <div class="specialty">
+                            <h4>Wrestling Photography</h4>
+                            <p>Professional events, dramatic lighting, action shots</p>
+                        </div>
+                        <div class="specialty">
+                            <h4>Literary & Celebrity Portraits</h4>
+                            <p>Authors, artists, and distinguished professionals</p>
+                        </div>
+                        <div class="specialty">
+                            <h4>Event Coverage</h4>
+                            <p>Weddings, corporate events, community gatherings</p>
+                        </div>
+                        <div class="specialty">
+                            <h4>Artistic Projects</h4>
+                            <p>Creative collaborations, conceptual photography</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            <h2>About Tony Knox</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/web RAMSEY CAMPBELL.jpg" alt="Professional Photography Work">
+                </div>
+                <div class="about-text">
+                    <h3>Professional Photographer - Liverpool & North West</h3>
+                    <p>With over 25 years of experience, I've built a reputation for capturing the extraordinary in every moment. From the high-energy world of professional wrestling to intimate portrait sessions, my work spans the full spectrum of human experience.</p>
+                    
+                    <p>Based in Liverpool, I serve the entire North West region, bringing professional-grade equipment and artistic vision to every shoot. My wrestling photography has gained recognition throughout the UK, while my portrait work includes prestigious literary figures such as <strong>Ramsey Campbell</strong> - Britain's most respected living horror writer and author of over 30 novels.</p>
+                    
+                    <p>My client portfolio includes internationally renowned authors, professional wrestlers, community leaders, and creative professionals who trust me to capture their authentic essence and professional image.</p>
+                    
+                    <div class="specialties">
+                        <div class="specialty">
+                            <h4>Wrestling Photography</h4>
+                            <p>Professional events, dramatic lighting, action shots</p>
+                        </div>
+                        <div class="specialty">
+                            <h4>Literary & Celebrity Portraits</h4>
+                            <p>Authors, artists, and distinguished professionals</p>
+                        </div>
+                        <div class="specialty">
+                            <h4>Event Coverage</h4>
+                            <p>Weddings, corporate events, community gatherings</p>
+                        </div>
+                        <div class="specialty">
+                            <h4>Artistic Projects</h4>
+                            <p>Creative collaborations, conceptual photography</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="section light">
+        <div class="container">
+            <h2>Book a Session</h2>
+            <div class="booking-container">
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button class="calendar-nav" onclick="previousMonth()">‹</button>
+                        <h3 id="currentMonth">January 2025</h3>
+                        <button class="calendar-nav" onclick="nextMonth()">›</button>
+                    </div>
+                    <div class="calendar-grid" id="calendar-grid">
+                        <!-- Calendar will be generated by JavaScript -->
+                    </div>
+                    <div style="margin-top: 20px; font-size: 14px; text-align: center;">
+                        <span style="color: #4CAF50;">● Available</span> | 
+                        <span style="color: #c9a96e;">● Selected</span> | 
+                        <span style="color: #ccc;">● Unavailable</span>
+                    </div>
+                </div>
+                
+                <form class="booking-form" name="booking" netlify onsubmit="submitBooking(event)">
+                    <input type="hidden" name="form-name" value="booking" />
+                    <h3 style="margin-bottom: 25px; color: #c9a96e;">Session Details</h3>
+                    
+                    <div class="form-group">
+                        <label for="session-type">Session Type</label>
+                        <select id="session-type" name="session-type" required>
+                            <option value="">Select Session Type</option>
+                            <option value="portrait">Portrait Session (£200-400)</option>
+                            <option value="wrestling">Wrestling Event Coverage (£300-600)</option>
+                            <option value="wedding">Wedding Photography (£800-1500)</option>
+                            <option value="event">Event Coverage (£250-500)</option>
+                            <option value="commercial">Commercial Shoot (£400-800)</option>
+                            <option value="artistic">Artistic Collaboration (Quote)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="client-name">Your Name</label>
+                        <input type="text" id="client-name" name="client-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="client-email">Email Address</label>
+                        <input type="email" id="client-email" name="client-email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="client-phone">Phone Number</label>
+                        <input type="tel" id="client-phone" name="client-phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="session-details">Project Details</label>
+                        <textarea id="session-details" name="session-details" rows="4" placeholder="Tell me about your vision, location, style preferences, number of people, etc."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferred-time">Preferred Time</label>
+                        <select id="preferred-time" name="preferred-time">
+                            <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+                            <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+                            <option value="evening">Evening (4:00 PM - 8:00 PM)</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+                    
+                    <input type="hidden" name="selected-date" id="selected-date-field" />
+                    
+                    <button type="submit" class="btn">Book Session</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section dark">
+        <div class="container">
+            <h2>Client Reviews</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <span class="client-name">Literary Client</span>
+                        <span class="rating">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">"Tony's professionalism and ability to capture authentic character in his portraits is exceptional. His work with distinguished literary figures demonstrates his skill in creating compelling images that truly represent his subjects."</p>
+                    <div class="testimonial-meta">Literary Portrait Session - 2024</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <span class="client-name">Sarah Mitchell</span>
+                        <span class="rating">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">"Tony's wrestling photography is absolutely incredible. The way he captures the intensity and emotion of the matches is unmatched. Professional, reliable, and delivers stunning results every time."</p>
+                    <div class="testimonial-meta">Wrestling Event Photography - December 2024</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <span class="client-name">Mark Thompson</span>
+                        <span class="rating">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">"The portrait session exceeded all expectations. Tony made me feel comfortable and the lighting was perfect. The final images were artistic and professional - exactly what I needed for my business."</p>
+                    <div class="testimonial-meta">Portrait Session - November 2024</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <span class="client-name">Emma Watson</span>
+                        <span class="rating">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">"Tony captured our wedding day beautifully. His background in action photography really showed - he didn't miss a single important moment. Creative, professional, and a joy to work with."</p>
+                    <div class="testimonial-meta">Wedding Photography - October 2024</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <span class="client-name">Liverpool Wrestling Alliance</span>
+                        <span class="rating">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">"Tony has been our official photographer for three years. His understanding of wrestling and ability to capture the perfect moment makes him invaluable to our organization."</p>
+                    <div class="testimonial-meta">Event Photography - Ongoing Partnership</div>
+                </div>
+            </div>
+
+            <!-- Add Review Form -->
+            <div style="background: #f8f8f8; padding: 40px; border-radius: 15px; margin-top: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <h3 style="margin-bottom: 30px; color: #c9a96e; text-align: center;">Share Your Experience</h3>
+                <form name="review" netlify onsubmit="submitReview(event)" style="max-width: 600px; margin: 0 auto;">
+                    <input type="hidden" name="form-name" value="review" />
+                    <div class="form-group">
+                        <label for="review-name">Your Name</label>
+                        <input type="text" id="review-name" name="review-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="review-rating">Rating</label>
+                        <select id="review-rating" name="review-rating" required>
+                            <option value="">Select Rating</option>
+                            <option value="5">★★★★★ (5 stars)</option>
+                            <option value="4">★★★★☆ (4 stars)</option>
+                            <option value="3">★★★☆☆ (3 stars)</option>
+                            <option value="2">★★☆☆☆ (2 stars)</option>
+                            <option value="1">★☆☆☆☆ (1 star)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="review-text">Your Review</label>
+                        <textarea id="review-text" name="review-text" rows="4" required placeholder="Tell others about your experience with Tony Knox Photography..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="review-type">Session Type</label>
+                        <select id="review-type" name="review-type">
+                            <option value="wrestling">Wrestling Photography</option>
+                            <option value="portrait">Portrait Session</option>
+                            <option value="wedding">Wedding Photography</option>
+                            <option value="event">Event Coverage</option>
+                            <option value="commercial">Commercial Work</option>
+                            <option value="artistic">Artistic Project</option>
+                        </select>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <button type="submit" class="btn">Submit Review</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media & Recognition -->
+    <section class="section light">
+        <div class="container">
+            <div class="social-media">
+                <h2>Follow My Work</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Stay updated with my latest photography work, behind-the-scenes content, and ongoing artistic projects.</p>
+                
+                <div class="social-links">
+                    <a href="https://www.instagram.com/tonyknox99/" target="_blank" class="social-link">Instagram</a>
+                    <a href="https://www.facebook.com/tony.knox1/" target="_blank" class="social-link">Facebook</a>
+                    <a href="https://www.flickr.com/photos/tonyknox/" target="_blank" class="social-link">Flickr Portfolio</a>
+                </div>
+                
+                <div style="margin-top: 3rem; padding: 30px; background: #f8f8f8; border-radius: 15px;">
+                    <h3 style="color: #c9a96e; margin-bottom: 15px;">Recent Recognition</h3>
+                    <p>"Tony Knox's ongoing artistic projects have captured local attention for their creative vision and artistic merit." - Local Media Coverage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section dark">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-top: 4rem;">
+                <div>
+                    <h3 style="color: #c9a96e; margin-bottom: 25px; font-size: 1.8rem;">Contact Information</h3>
+                    <p style="margin-bottom: 15px; font-size: 1.1rem;"><strong>Location:</strong> Liverpool, Merseyside, UK</p>
+                    <p style="margin-bottom: 15px; font-size: 1.1rem;"><strong>Service Area:</strong> North West England</p>
+                    <p style="margin-bottom: 15px; font-size: 1.1rem;"><strong>Contact:</strong> Please use the message form to get in touch</p>
+                    
+                    <h4 style="color: #c9a96e; margin: 30px 0 15px 0; font-size: 1.3rem;">Availability</h4>
+                    <p style="line-height: 1.8;">Please contact me anytime using the message form. I respond to all inquiries promptly and can accommodate flexible scheduling for shoots, including evenings and weekends.</p>
+                    
+                    <h4 style="color: #c9a96e; margin: 30px 0 15px 0; font-size: 1.3rem;">Specialties</h4>
+                    <p style="line-height: 1.8;">• Professional Wrestling Photography<br>
+                    • Portrait & Headshot Sessions<br>
+                    • Wedding & Event Coverage<br>
+                    • Commercial Photography<br>
+                    • Artistic Collaborations</p>
+                </div>
+                
+                <form name="contact" netlify onsubmit="submitContact(event)" style="background: #f8f8f8; padding: 40px; border-radius: 15px; color: #333;">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <h3 style="margin-bottom: 25px; color: #c9a96e;">Send a Message</h3>
+                    
+                    <div class="form-group">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" name="contact-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="contact-email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <select id="contact-subject" name="contact-subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="booking">Booking Request</option>
+                            <option value="pricing">Pricing Information</option>
+                            <option value="collaboration">Artistic Collaboration</option>
+                            <option value="wrestling">Wrestling Photography</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="contact-message" rows="5" required placeholder="Tell me about your photography needs or creative vision..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tony Knox Photography</h3>
+                    <p>Professional photographer specializing in wrestling photography, portraits, and creative projects. Serving Liverpool and the North West with 25+ years of experience.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <p><a href="#portfolio" onclick="scrollToSection('portfolio')">Wrestling Photography</a></p>
+                    <p><a href="#portfolio" onclick="scrollToSection('portfolio')">Portrait Sessions</a></p>
+                    <p><a href="#portfolio" onclick="scrollToSection('portfolio')">Wedding Coverage</a></p>
+                    <p><a href="#portfolio" onclick="scrollToSection('portfolio')">Event Photography</a></p>
+                    <p><a href="#portfolio" onclick="scrollToSection('portfolio')">Artistic Projects</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <p><a href="https://www.instagram.com/tonyknox99/" target="_blank">Instagram</a></p>
+                    <p><a href="https://www.facebook.com/tony.knox1/" target="_blank">Facebook</a></p>
+                    <p><a href="https://www.flickr.com/photos/tonyknox/" target="_blank">Flickr Portfolio</a></p>
+                    <p><a href="#booking" onclick="scrollToSection('booking')">Book Session</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Coverage Area</h3>
+                    <p>Liverpool</p>
+                    <p>Manchester</p>
+                    <p>Chester</p>
+                    <p>Wirral</p>
+                    <p>North West England</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Tony Knox Photography. All rights reserved. | Professional Photography Services Liverpool & North West</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 style="color: #c9a96e; margin-bottom: 20px;">Message Received!</h2>
+            <p id="modalMessage">Thank you for your inquiry!</p>
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="btn" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
