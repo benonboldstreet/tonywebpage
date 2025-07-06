@@ -59,6 +59,12 @@ function selectDate(date, element) {
         });
         element.classList.add('selected');
         selectedDate = date;
+        
+        // Update the hidden form field with selected date
+        const dateField = document.getElementById('selected-date-field');
+        if (dateField) {
+            dateField.value = date.toLocaleDateString();
+        }
     }
 }
 
@@ -89,83 +95,51 @@ function filterGallery(category) {
     });
 }
 
-// Form submissions
+// Form submissions - FIXED FOR NETLIFY
 function submitBooking(event) {
-    event.preventDefault();
-    
+    // Check if date is selected BEFORE submission
     if (!selectedDate) {
+        event.preventDefault(); // Only prevent if validation fails
         alert('Please select a date from the calendar');
-        return;
+        return false;
     }
     
-    const formData = {
-        date: selectedDate.toLocaleDateString(),
-        sessionType: document.getElementById('session-type').value,
-        name: document.getElementById('client-name').value,
-        email: document.getElementById('client-email').value,
-        phone: document.getElementById('client-phone').value,
-        details: document.getElementById('session-details').value,
-        time: document.getElementById('preferred-time').value
-    };
+    // Set the selected date in the hidden field
+    const dateField = document.getElementById('selected-date-field');
+    if (dateField) {
+        dateField.value = selectedDate.toLocaleDateString();
+    }
     
-    // In a real website, you would send this data to your server
-    console.log('Booking request:', formData);
+    // Show confirmation message but LET THE FORM SUBMIT to Netlify
+    setTimeout(() => {
+        showModal('Booking Request Sent!', 
+            'Thank you! Your booking request has been sent. I\'ll contact you within 24 hours to confirm availability.');
+    }, 100);
     
-    showModal('Booking Request Sent!', 
-        `Thank you ${formData.name}! Your booking request for ${formData.date} has been sent. I'll contact you within 24 hours to confirm availability and discuss your vision.`);
-    
-    event.target.reset();
-    selectedDate = null;
-    generateCalendar();
+    // Return true to allow form submission to Netlify
+    return true;
 }
 
 function submitReview(event) {
-    event.preventDefault();
+    // Let the form submit to Netlify, then show confirmation
+    setTimeout(() => {
+        showModal('Review Submitted!', 
+            'Thank you for your feedback! Your review has been submitted and helps others understand the quality of my work.');
+    }, 100);
     
-    const formData = {
-        name: document.getElementById('review-name').value,
-        rating: document.getElementById('review-rating').value,
-        text: document.getElementById('review-text').value,
-        type: document.getElementById('review-type').value,
-        date: new Date().toLocaleDateString()
-    };
-    
-    // Add new review to the top of the list
-    const newReview = document.createElement('div');
-    newReview.className = 'testimonial';
-    newReview.innerHTML = `
-        <div class="testimonial-header">
-            <span class="client-name">${formData.name}</span>
-            <span class="rating">${'★'.repeat(formData.rating)}${'☆'.repeat(5-formData.rating)}</span>
-        </div>
-        <p class="testimonial-text">"${formData.text}"</p>
-        <div class="testimonial-meta">${formData.type.charAt(0).toUpperCase() + formData.type.slice(1)} - ${formData.date}</div>
-    `;
-    
-    const testimonialsGrid = document.querySelector('.testimonials-grid');
-    testimonialsGrid.insertBefore(newReview, testimonialsGrid.children[0]);
-    
-    showModal('Review Submitted!', 'Thank you for your feedback! Your review has been posted and helps others understand the quality of my work.');
-    event.target.reset();
+    // Return true to allow form submission to Netlify
+    return true;
 }
 
 function submitContact(event) {
-    event.preventDefault();
+    // Let the form submit to Netlify, then show confirmation
+    setTimeout(() => {
+        showModal('Message Sent!', 
+            'Thank you! Your message has been sent successfully. I\'ll get back to you within 24 hours.');
+    }, 100);
     
-    const formData = {
-        name: document.getElementById('contact-name').value,
-        email: document.getElementById('contact-email').value,
-        subject: document.getElementById('contact-subject').value,
-        message: document.getElementById('contact-message').value
-    };
-    
-    // In a real website, you would send this data to your server
-    console.log('Contact form:', formData);
-    
-    showModal('Message Sent!', 
-        `Thank you ${formData.name}! Your message has been sent successfully. I'll get back to you within 24 hours to discuss your photography needs.`);
-    
-    event.target.reset();
+    // Return true to allow form submission to Netlify
+    return true;
 }
 
 // Modal functions
