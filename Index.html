@@ -239,41 +239,6 @@
             </div>
         </div>
     </section>
-            <h2>About Tony Knox</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="images/web RAMSEY CAMPBELL.jpg" alt="Professional Photography Work">
-                </div>
-                <div class="about-text">
-                    <h3>Professional Photographer - Liverpool & North West</h3>
-                    <p>With over 25 years of experience, I've built a reputation for capturing the extraordinary in every moment. From the high-energy world of professional wrestling to intimate portrait sessions, my work spans the full spectrum of human experience.</p>
-                    
-                    <p>Based in Liverpool, I serve the entire North West region, bringing professional-grade equipment and artistic vision to every shoot. My wrestling photography has gained recognition throughout the UK, while my portrait work includes prestigious literary figures such as <strong>Ramsey Campbell</strong> - Britain's most respected living horror writer and author of over 30 novels.</p>
-                    
-                    <p>My client portfolio includes internationally renowned authors, professional wrestlers, community leaders, and creative professionals who trust me to capture their authentic essence and professional image.</p>
-                    
-                    <div class="specialties">
-                        <div class="specialty">
-                            <h4>Wrestling Photography</h4>
-                            <p>Professional events, dramatic lighting, action shots</p>
-                        </div>
-                        <div class="specialty">
-                            <h4>Literary & Celebrity Portraits</h4>
-                            <p>Authors, artists, and distinguished professionals</p>
-                        </div>
-                        <div class="specialty">
-                            <h4>Event Coverage</h4>
-                            <p>Weddings, corporate events, community gatherings</p>
-                        </div>
-                        <div class="specialty">
-                            <h4>Artistic Projects</h4>
-                            <p>Creative collaborations, conceptual photography</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Booking Section -->
     <section id="booking" class="section light">
@@ -296,7 +261,8 @@
                     </div>
                 </div>
                 
-                <form class="booking-form" name="booking" netlify onsubmit="submitBooking(event)">
+                <!-- FIXED BOOKING FORM - NO JAVASCRIPT HANDLERS -->
+                <form class="booking-form" name="booking" netlify>
                     <input type="hidden" name="form-name" value="booking" />
                     <h3 style="margin-bottom: 25px; color: #c9a96e;">Session Details</h3>
                     
@@ -343,7 +309,10 @@
                         </select>
                     </div>
                     
-                    <input type="hidden" name="selected-date" id="selected-date-field" />
+                    <div class="form-group">
+                        <label for="selected-date">Preferred Date (select from calendar above)</label>
+                        <input type="text" name="selected-date" id="selected-date" placeholder="Select a date from the calendar above">
+                    </div>
                     
                     <button type="submit" class="btn">Book Session</button>
                 </form>
@@ -402,10 +371,10 @@
                 </div>
             </div>
 
-            <!-- Add Review Form -->
+            <!-- FIXED REVIEW FORM - NO JAVASCRIPT HANDLERS -->
             <div style="background: #f8f8f8; padding: 40px; border-radius: 15px; margin-top: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                 <h3 style="margin-bottom: 30px; color: #c9a96e; text-align: center;">Share Your Experience</h3>
-                <form name="review" netlify onsubmit="submitReview(event)" style="max-width: 600px; margin: 0 auto;">
+                <form name="review" netlify style="max-width: 600px; margin: 0 auto;">
                     <input type="hidden" name="form-name" value="review" />
                     <div class="form-group">
                         <label for="review-name">Your Name</label>
@@ -492,7 +461,8 @@
                     • Artistic Collaborations</p>
                 </div>
                 
-                <form name="contact" netlify onsubmit="submitContact(event)" style="background: #f8f8f8; padding: 40px; border-radius: 15px; color: #333;">
+                <!-- FIXED CONTACT FORM - NO JAVASCRIPT HANDLERS -->
+                <form name="contact" netlify style="background: #f8f8f8; padding: 40px; border-radius: 15px; color: #333;">
                     <input type="hidden" name="form-name" value="contact" />
                     <h3 style="margin-bottom: 25px; color: #c9a96e;">Send a Message</h3>
                     
@@ -550,7 +520,7 @@
                     <h3>Connect</h3>
                     <p><a href="https://www.instagram.com/tonyknox99/" target="_blank">Instagram</a></p>
                     <p><a href="https://www.facebook.com/tony.knox1/" target="_blank">Facebook</a></p>
-                    <p><a href="https://www.flickr.com/photos/tonyknox/" target="_blank">Flickr Portfolio</a></p>
+                    <p><a href="https://www.flickr.com/photos/tonyknox/" target="_blank" class="social-link">Flickr Portfolio</a></p>
                     <p><a href="#booking" onclick="scrollToSection('booking')">Book Session</a></p>
                 </div>
                 
