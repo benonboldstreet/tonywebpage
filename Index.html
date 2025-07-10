@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tony Knox Photography - Professional Photographer Liverpool</title>
-    <meta name="description" content="Professional photographer Tony Knox specializing in wrestling photography, portraits, and creative projects. Serving Liverpool and North West England with 25+ years experience.">
-    <meta name="keywords" content="Tony Knox Photography, Liverpool photographer, wrestling photography, portraits, North West England, professional photographer">
+    <title>Tony Knox Photography - Wrestling Photography Specialist | North West England</title>
+    <meta name="description" content="Wrestling Photography Specialist Tony Knox - 25+ years capturing WWE events, Rey Mysterio portraits, and professional wrestling across North West England. Plus literary portraits and creative projects.">
+    <meta name="keywords" content="Tony Knox Photography, wrestling photographer, Rey Mysterio photography, WWE photographer, North West England, professional wrestling photography, character portraits, Liverpool photographer">
     <meta name="author" content="Tony Knox">
     
     <!-- Open Graph / Facebook -->
@@ -68,14 +68,18 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1>TONY KNOX</h1>
-                <p class="hero-subtitle">Professional Photography</p>
-                <p class="hero-description">Capturing the extraordinary in wrestling, portraits, and life's most dynamic moments across the North West</p>
-                <a href="#portfolio" class="btn" onclick="scrollToSection('portfolio')">View Portfolio</a>
+                <p class="hero-subtitle">Professional Wrestling & Portrait Photography</p>
+                <p class="hero-tagline" style="font-size: 1.1rem; color: #c9a96e; font-weight: 500; margin: 15px 0;">25+ Years Capturing Wrestling's Greatest Moments</p>
+                <p class="hero-description">Specializing in professional wrestling photography with dramatic lighting and perfect timing. From WWE events to independent promotions, literary portraits to creative projects across the North West.</p>
+                <div class="hero-buttons" style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
+                    <a href="#portfolio" class="btn btn-primary" onclick="scrollToSection('portfolio')" style="background: #c9a96e; border: 2px solid #c9a96e;">Wrestling Portfolio</a>
+                    <a href="#booking" class="btn btn-secondary" onclick="scrollToSection('booking')" style="background: transparent; border: 2px solid #c9a96e; color: #c9a96e;">Book Wrestling Coverage</a>
+                </div>
             </div>
             <div class="hero-image">
                 <div class="image-container hero-image-container">
                     <div class="image-placeholder hero-placeholder"></div>
-                    <img src="images/wrestling-1.jpg" alt="Professional Wrestling Photography by Tony Knox" loading="eager" class="hero-img">
+                    <img src="images/rey-mysterio-studio-portrait.jpg" alt="Professional Wrestling Photography by Tony Knox featuring Rey Mysterio" loading="eager" class="hero-img">
                 </div>
             </div>
         </div>
@@ -85,13 +89,24 @@
     <section id="portfolio" class="section light">
         <div class="container">
             <h2>Portfolio</h2>
-            <p class="portfolio-intro">From the intensity of professional wrestling to intimate portraits and creative projects, my work spans the full spectrum of human experience and emotion.</p>
+            <p class="portfolio-intro">Specializing in professional wrestling photography with 25+ years of experience capturing the raw emotion, athleticism, and drama of the sport. From WWE events to independent promotions, plus distinguished portrait work and creative projects.</p>
+            
+            <div class="wrestling-highlight" style="background: rgba(201, 169, 110, 0.1); padding: 30px; border-radius: 15px; margin: 30px 0; text-align: center;">
+                <h3 style="color: #c9a96e; margin-bottom: 15px; font-size: 1.8rem;">🥇 Wrestling Photography Specialist</h3>
+                <p style="font-size: 1.1rem; margin-bottom: 20px;">Featuring Rey Mysterio and other wrestling legends with dramatic lighting and perfect timing</p>
+                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                    <span style="background: rgba(201, 169, 110, 0.2); padding: 8px 16px; border-radius: 20px; font-size: 0.9rem;">WWE Events</span>
+                    <span style="background: rgba(201, 169, 110, 0.2); padding: 8px 16px; border-radius: 20px; font-size: 0.9rem;">Independent Promotions</span>
+                    <span style="background: rgba(201, 169, 110, 0.2); padding: 8px 16px; border-radius: 20px; font-size: 0.9rem;">Character Portraits</span>
+                    <span style="background: rgba(201, 169, 110, 0.2); padding: 8px 16px; border-radius: 20px; font-size: 0.9rem;">Action Shots</span>
+                </div>
+            </div>
             
             <div class="gallery-filters">
                 <button class="filter-btn active" onclick="filterGallery('all')">All Work</button>
-                <button class="filter-btn" onclick="filterGallery('wrestling')">Wrestling</button>
-                <button class="filter-btn" onclick="filterGallery('portraits')">Portraits</button>
-                <button class="filter-btn" onclick="filterGallery('events')">Events</button>
+                <button class="filter-btn" onclick="filterGallery('wrestling')" style="background: #c9a96e; color: white; font-weight: bold;">🥊 Wrestling Photography</button>
+                <button class="filter-btn" onclick="filterGallery('portraits')">Portrait Sessions</button>
+                <button class="filter-btn" onclick="filterGallery('events')">Event Coverage</button>
                 <button class="filter-btn" onclick="filterGallery('artistic')">Artistic Projects</button>
             </div>
             
@@ -100,11 +115,72 @@
                 <div class="gallery-item" data-category="wrestling" onclick="openLightbox(this)">
                     <div class="image-container">
                         <div class="image-placeholder"></div>
-                        <img src="images/wrestling-1.jpg" alt="Professional Wrestling Photography" loading="lazy" class="lazy-image">
+                        <img src="images/wrestling-1.jpg" alt="Wrestling Commentary and Coverage" loading="lazy" class="lazy-image">
                     </div>
                     <div class="gallery-overlay">
-                        <h3>Wrestling Photography</h3>
-                        <p>Professional dramatic lighting and composition</p>
+                        <h3>Wrestling Coverage</h3>
+                        <p>Wrestling Commentary and Coverage</p>
+                        <div class="view-full">Click to view full size</div>
+                    </div>
+                </div>
+                
+                <!-- Wrestling Photography -->
+                <div class="gallery-item" data-category="wrestling" onclick="openLightbox(this)">
+                    <div class="image-container">
+                        <div class="image-placeholder"></div>
+                        <img src="images/rey-mysterio-studio-portrait.jpg" alt="Rey Mysterio Studio Portrait" loading="lazy" class="lazy-image">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Studio Wrestling Portraits</h3>
+                        <p>Rey Mysterio Studio Portrait</p>
+                        <div class="view-full">Click to view full size</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="wrestling" onclick="openLightbox(this)">
+                    <div class="image-container">
+                        <div class="image-placeholder"></div>
+                        <img src="images/rey-mysterio-high-flying.jpg" alt="Rey Mysterio High-Flying Wrestling Action" loading="lazy" class="lazy-image">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>In-Ring Action</h3>
+                        <p>Rey Mysterio High-Flying Wrestling Action</p>
+                        <div class="view-full">Click to view full size</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="wrestling" onclick="openLightbox(this)">
+                    <div class="image-container">
+                        <div class="image-placeholder"></div>
+                        <img src="images/rey-mysterio-character-pose.jpg" alt="Rey Mysterio Dynamic Character Photography" loading="lazy" class="lazy-image">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Character Portraits</h3>
+                        <p>Rey Mysterio Dynamic Character Photography</p>
+                        <div class="view-full">Click to view full size</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="wrestling" onclick="openLightbox(this)">
+                    <div class="image-container">
+                        <div class="image-placeholder"></div>
+                        <img src="images/rey-mysterio-high-flying.jpg" alt="Rey Mysterio Executing High-Flying Move" loading="lazy" class="lazy-image">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Aerial Wrestling</h3>
+                        <p>Rey Mysterio Executing High-Flying Move</p>
+                        <div class="view-full">Click to view full size</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="wrestling" onclick="openLightbox(this)">
+                    <div class="image-container">
+                        <div class="image-placeholder"></div>
+                        <img src="images/rey-mysterio-mask-closeup.jpg" alt="Rey Mysterio Professional Mask Portrait" loading="lazy" class="lazy-image">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Masked Wrestling</h3>
+                        <p>Rey Mysterio Professional Mask Portrait</p>
                         <div class="view-full">Click to view full size</div>
                     </div>
                 </div>
@@ -113,64 +189,52 @@
                 <div class="gallery-item" data-category="portraits" onclick="openLightbox(this)">
                     <div class="image-container">
                         <div class="image-placeholder"></div>
-                        <img src="images/portrait-studio-1.jpg" alt="Studio Portrait Session" loading="lazy" class="lazy-image">
-                    </div>
-                    <div class="gallery-overlay">
-                        <h3>Studio Portraits</h3>
-                        <p>Professional lighting and composition</p>
-                        <div class="view-full">Click to view full size</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item" data-category="portraits" onclick="openLightbox(this)">
-                    <div class="image-container">
-                        <div class="image-placeholder"></div>
-                        <img src="images/portrait-studio-2.jpg" alt="Contemporary Portrait" loading="lazy" class="lazy-image">
-                    </div>
-                    <div class="gallery-overlay">
-                        <h3>Contemporary Portraits</h3>
-                        <p>Modern style and professional lighting</p>
-                        <div class="view-full">Click to view full size</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item" data-category="portraits" onclick="openLightbox(this)">
-                    <div class="image-container">
-                        <div class="image-placeholder"></div>
-                        <img src="images/portrait-studio-3.jpg" alt="Fashion Portrait" loading="lazy" class="lazy-image">
-                    </div>
-                    <div class="gallery-overlay">
-                        <h3>Fashion Portraits</h3>
-                        <p>Style and artistic vision</p>
-                        <div class="view-full">Click to view full size</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item" data-category="portraits" onclick="openLightbox(this)">
-                    <div class="image-container">
-                        <div class="image-placeholder"></div>
-                        <img src="images/portrait-studio-4.jpg" alt="Creative Portrait" loading="lazy" class="lazy-image">
-                    </div>
-                    <div class="gallery-overlay">
-                        <h3>Creative Portraits</h3>
-                        <p>Artistic vision and professional composition</p>
-                        <div class="view-full">Click to view full size</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item" data-category="portraits" onclick="openLightbox(this)">
-                    <div class="image-container">
-                        <div class="image-placeholder"></div>
-                        <img src="images/portrait-environmental-1.jpg" alt="Environmental Portrait" loading="lazy" class="lazy-image">
+                        <img src="images/portrait-environmental-1.jpg" alt="Environmental Greenhouse Portrait" loading="lazy" class="lazy-image">
                     </div>
                     <div class="gallery-overlay">
                         <h3>Environmental Portraits</h3>
-                        <p>Natural settings and authentic moments</p>
+                        <p>Environmental Greenhouse Portrait</p>
                         <div class="view-full">Click to view full size</div>
                     </div>
                 </div>
                 
-                <!-- Professional Headshots -->
+                <div class="gallery-item" data-category="portraits" onclick="openLightbox(this)">
+                    <div class="image-container">
+                        <div class="image-placeholder"></div>
+                        <img src="images/portrait-studio-1.jpg" alt="Classical Violinist Portrait" loading="lazy" class="lazy-image">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Classical Portraits</h3>
+                        <p>Classical Violinist Portrait</p>
+                        <div class="view-full">Click to view full size</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="portraits" onclick="openLightbox(this)">
+                    <div class="image-container">
+                        <div class="image-placeholder"></div>
+                        <img src="images/fashion-leather-profile.jpg" alt="Fashion Portrait - Profile with Leather Jacket" loading="lazy" class="lazy-image">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Fashion Photography</h3>
+                        <p>Fashion Portrait - Profile with Leather Jacket</p>
+                        <div class="view-full">Click to view full size</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="portraits" onclick="openLightbox(this)">
+                    <div class="image-container">
+                        <div class="image-placeholder"></div>
+                        <img src="images/portrait-studio-2.jpg" alt="Professional Wrestler Portrait" loading="lazy" class="lazy-image">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Athlete Portraits</h3>
+                        <p>Professional Wrestler Portrait</p>
+                        <div class="view-full">Click to view full size</div>
+                    </div>
+                </div>
+                
+                <!-- Literary Portraits -->
                 <div class="gallery-item" data-category="portraits" onclick="openLightbox(this)">
                     <div class="image-container">
                         <div class="image-placeholder"></div>
@@ -187,11 +251,11 @@
                 <div class="gallery-item" data-category="events" onclick="openLightbox(this)">
                     <div class="image-container">
                         <div class="image-placeholder"></div>
-                        <img src="images/event-community-1.jpg" alt="Community Event Photography" loading="lazy" class="lazy-image">
+                        <img src="images/event-community-1.jpg" alt="Community Event with Dinosaur Display" loading="lazy" class="lazy-image">
                     </div>
                     <div class="gallery-overlay">
                         <h3>Community Events</h3>
-                        <p>Capturing local stories and moments</p>
+                        <p>Community Event with Dinosaur Display</p>
                         <div class="view-full">Click to view full size</div>
                     </div>
                 </div>
@@ -225,13 +289,83 @@
             <!-- Featured Work Section -->
             <div class="featured-work">
                 <div class="featured-image">
-                    <img src="images/wrestling-1.jpg" alt="Featured Wrestling Photography">
+                    <img src="images/rey-mysterio-fire-scene.jpg" alt="Featured Wrestling Photography - Rey Mysterio Theatrical Scene">
                 </div>
                 <div class="featured-content">
-                    <h3>Wrestling Photography Excellence</h3>
-                    <p>Specializing in professional wrestling photography with dramatic lighting and perfect timing. My work captures the raw emotion and athleticism of wrestling, from WWE events to independent promotions across the UK.</p>
-                    <p>Each shot tells a story of dedication, passion, and the artistry of professional wrestling.</p>
-                    <a href="https://www.flickr.com/photos/tonyknox/" target="_blank" class="btn">View Full Gallery on Flickr</a>
+                    <h3>Featured: Rey Mysterio Theatrical Photography</h3>
+                    <div style="background: rgba(201, 169, 110, 0.1); padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #c9a96e;">
+                        <p style="font-style: italic; color: #c9a96e; margin-bottom: 10px;">"This theatrical scene captures the essence of Rey Mysterio's legendary career"</p>
+                    </div>
+                    <p>Specializing in professional wrestling photography with dramatic lighting and perfect timing. This featured image showcases advanced lighting techniques and compositional mastery, capturing Rey Mysterio in a powerful theatrical setting.</p>
+                    <p>From intimate character portraits to high-energy action shots, my wrestling photography tells the complete story of professional wrestling's artistry and athleticism.</p>
+                    
+                    <div style="display: flex; gap: 15px; margin: 25px 0; flex-wrap: wrap;">
+                        <a href="https://www.flickr.com/photos/tonyknox/" target="_blank" class="btn" style="background: #c9a96e; border: 2px solid #c9a96e;">🖼️ Full Flickr Gallery</a>
+                        <a href="#booking" class="btn" onclick="scrollToSection('booking')" style="background: transparent; border: 2px solid #c9a96e; color: #c9a96e;">📅 Book Wrestling Session</a>
+                    </div>
+                    
+                    <div style="margin-top: 25px; padding: 20px; background: rgba(0,0,0,0.1); border-radius: 10px;">
+                        <h4 style="color: #c9a96e; margin-bottom: 15px;">✨ Technical Excellence</h4>
+                        <ul style="line-height: 1.8; padding-left: 20px;">
+                            <li>Professional studio lighting setups</li>
+                            <li>High-speed action photography</li>
+                            <li>Creative theatrical compositions</li>
+                            <li>Character-driven portrait work</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wrestling Credentials Section -->
+    <section class="section dark" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 50px;">Wrestling Photography Excellence</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto;">
+                
+                <!-- Experience Stats -->
+                <div style="background: rgba(201, 169, 110, 0.1); padding: 40px; border-radius: 20px; text-align: center; border: 2px solid rgba(201, 169, 110, 0.2);">
+                    <div style="font-size: 3rem; color: #c9a96e; font-weight: bold; margin-bottom: 15px;">25+</div>
+                    <h3 style="color: #c9a96e; margin-bottom: 15px;">Years Experience</h3>
+                    <p style="line-height: 1.6;">Professional wrestling photography spanning WWE events, independent promotions, and character portraits across the UK.</p>
+                </div>
+                
+                <!-- Wrestling Specialties -->
+                <div style="background: rgba(201, 169, 110, 0.1); padding: 40px; border-radius: 20px; text-align: center; border: 2px solid rgba(201, 169, 110, 0.2);">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">🥊</div>
+                    <h3 style="color: #c9a96e; margin-bottom: 15px;">Wrestling Expertise</h3>
+                    <p style="line-height: 1.6;">Dramatic lighting, perfect timing, and understanding of wrestling dynamics. Capturing the intensity and athleticism of the sport.</p>
+                </div>
+                
+                <!-- Featured Wrestler -->
+                <div style="background: rgba(201, 169, 110, 0.1); padding: 40px; border-radius: 20px; text-align: center; border: 2px solid rgba(201, 169, 110, 0.2);">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">⭐</div>
+                    <h3 style="color: #c9a96e; margin-bottom: 15px;">Rey Mysterio Featured</h3>
+                    <p style="line-height: 1.6;">Multiple sessions with wrestling legend Rey Mysterio, showcasing studio portraits, action shots, and character photography.</p>
+                </div>
+            </div>
+            
+            <!-- Wrestling Photography Services -->
+            <div style="background: rgba(201, 169, 110, 0.05); padding: 50px; border-radius: 20px; margin-top: 50px; text-align: center;">
+                <h3 style="color: #c9a96e; margin-bottom: 30px; font-size: 2rem;">Wrestling Photography Services</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto;">
+                    <div>
+                        <h4 style="color: #c9a96e; margin-bottom: 15px;">📸 Event Coverage</h4>
+                        <p>Live wrestling events, matches, and backstage moments with professional equipment and expertise.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #c9a96e; margin-bottom: 15px;">🎭 Character Portraits</h4>
+                        <p>Studio and environmental portraits capturing the persona and character of professional wrestlers.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #c9a96e; margin-bottom: 15px;">⚡ Action Shots</h4>
+                        <p>High-speed photography capturing aerial moves, dramatic moments, and athletic excellence.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #c9a96e; margin-bottom: 15px;">🎪 Promotional Material</h4>
+                        <p>Professional images for wrestling promotions, marketing materials, and social media content.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -279,29 +413,29 @@
                     <img src="images/tonyknox2.jpg" alt="Tony Knox - Professional Photographer at Work">
                 </div>
                 <div class="about-text">
-                    <h3>Professional Photographer - North West</h3>
-                    <p>With over 25 years of experience, I've built a reputation for capturing the extraordinary in every moment. From the high-energy world of professional wrestling to intimate portrait sessions, my work spans the full spectrum of human experience.</p>
+                    <h3>Wrestling Photography Specialist - North West</h3>
+                    <p>With over 25 years of experience, I've built a reputation as <strong>the North West's premier wrestling photographer</strong>. From WWE events to independent promotions, my work captures the raw emotion, athleticism, and theatrical artistry that makes professional wrestling compelling.</p>
                     
-                    <p>Based in the North West, I bring professional-grade equipment and artistic vision to every shoot. My wrestling photography has gained recognition throughout the UK, while my portrait work includes prestigious literary figures such as <strong>Ramsey Campbell</strong> - Britain's most respected living horror writer and author of over 30 novels.</p>
+                    <p>Based in the North West, I bring professional-grade equipment and an intimate understanding of wrestling dynamics to every shoot. My wrestling photography portfolio features <strong>Rey Mysterio</strong> and other wrestling legends, while my diverse portfolio includes prestigious literary figures such as <strong>Ramsey Campbell</strong> - Britain's most respected living horror writer.</p>
                     
-                    <p>My client portfolio includes internationally renowned authors, professional wrestlers, community leaders, and creative professionals who trust me to capture their authentic essence and professional image.</p>
+                    <p>My client portfolio spans from <strong>professional wrestling organizations</strong> to internationally renowned authors, community leaders, and creative professionals who trust me to capture their authentic essence and professional image with technical excellence.</p>
                     
                     <div class="specialties">
-                        <div class="specialty">
-                            <h4>Wrestling Photography</h4>
-                            <p>Professional events, dramatic lighting, action shots</p>
+                        <div class="specialty" style="background: rgba(201, 169, 110, 0.1); border: 2px solid rgba(201, 169, 110, 0.3); border-radius: 10px; padding: 20px;">
+                            <h4 style="color: #c9a96e;">🥊 Wrestling Photography</h4>
+                            <p><strong>SPECIALTY:</strong> WWE events, independent promotions, character portraits, action shots, promotional materials</p>
                         </div>
                         <div class="specialty">
-                            <h4>Literary & Celebrity Portraits</h4>
-                            <p>Authors, artists, and distinguished professionals</p>
+                            <h4>📚 Literary & Celebrity Portraits</h4>
+                            <p>Distinguished authors, artists, and celebrated professionals including Ramsey Campbell</p>
                         </div>
                         <div class="specialty">
-                            <h4>Event Coverage</h4>
-                            <p>Weddings, corporate events, community gatherings</p>
+                            <h4>🎉 Event Coverage</h4>
+                            <p>Weddings, corporate events, community gatherings, live performances</p>
                         </div>
                         <div class="specialty">
-                            <h4>Artistic Projects</h4>
-                            <p>Creative collaborations, conceptual photography</p>
+                            <h4>🎨 Artistic Projects</h4>
+                            <p>Creative collaborations, conceptual photography, MOTH magazine features</p>
                         </div>
                     </div>
                 </div>
@@ -602,15 +736,15 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Tony Knox Photography</h3>
-                    <p>Professional photographer specializing in wrestling photography, portraits, and creative projects. Serving the North West with 25+ years of experience.</p>
+                    <p><strong>Wrestling Photography Specialist</strong> - Professional photographer serving the North West with 25+ years of experience. From WWE events to Rey Mysterio portraits, plus literary and creative projects.</p>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Services</h3>
-                    <p><a href="#portfolio" onclick="scrollToSection('portfolio')">Wrestling Photography</a></p>
-                    <p><a href="#portfolio" onclick="scrollToSection('portfolio')">Portrait Sessions</a></p>
-                    <p><a href="#portfolio" onclick="scrollToSection('portfolio')">Wedding Coverage</a></p>
-                    <p><a href="#portfolio" onclick="scrollToSection('portfolio')">Event Photography</a></p>
+                    <p><a href="#portfolio" onclick="scrollToSection('portfolio')" style="color: #c9a96e; font-weight: bold;">🥊 Wrestling Photography</a></p>
+                    <p><a href="#portfolio" onclick="scrollToSection('portfolio')">Character Portraits</a></p>
+                    <p><a href="#portfolio" onclick="scrollToSection('portfolio')">Literary Portraits</a></p>
+                    <p><a href="#portfolio" onclick="scrollToSection('portfolio')">Event Coverage</a></p>
                     <p><a href="#portfolio" onclick="scrollToSection('portfolio')">Artistic Projects</a></p>
                 </div>
                 
